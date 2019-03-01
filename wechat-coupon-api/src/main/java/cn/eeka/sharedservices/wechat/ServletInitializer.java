@@ -1,4 +1,4 @@
-package cn.eeka.sharedcenter.wechat;
+package cn.eeka.sharedservices.wechat;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

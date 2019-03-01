@@ -1,4 +1,4 @@
-package cn.eeka.sharedcenter.wechat;
+package cn.eeka.sharedservices.wechat;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
