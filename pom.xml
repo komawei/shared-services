@@ -7,6 +7,10 @@
     <groupId>cn.eeka</groupId>
     <artifactId>shared-services</artifactId>
     <version>1.0</version>
+    <modules>
+        <module>shared-services-common</module>
+        <module>wechat-coupon-api</module>
+    </modules>
     <packaging>pom</packaging>
 
     <properties>
@@ -42,19 +46,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
                 <version>1.1.10</version>
-                <type>pom</type>
-                <scope>import</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>2.0.0</version>
-            </dependency>
-
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-core</artifactId>
             </dependency>
 
             <dependency>
@@ -67,6 +64,12 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
                 <version>1.2.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-typehandlers-jsr310</artifactId>
+                <version>1.0.1</version>
             </dependency>
 
             <dependency>

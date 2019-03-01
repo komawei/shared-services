@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.eeka.sharedservices.wechat.dao.WechatCouponDao">
+    <resultMap type="cn.eeka.sharedservices.wechat.entity.WechatCoupon" id="WechatCouponResult">
+        <result column="id" property="id" />
+		<result column="coupon_code" property="couponCode" />
+
+        <result column="update_date" property="updateDate" />
+        <result column="create_date" property="createDate" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="update_user_id" property="updateUserId" />
+    </resultMap>
+
+    <select id="listWithCondition" resultMap="WechatCouponResult">
+        SELECT a.*
+        FROM wechat_coupon a
+        <where>
+            <include refid="where_clause" />
+        </where>
+    </select>
+
+    <sql id="where_clause">
+
+    </sql>
+
+</mapper>
