@@ -2,10 +2,11 @@ package cn.eeka.sharedservices.wechat.dao;
 
 import cn.eeka.sharedservices.wechat.entity.WechatCoupon;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
+
+
 
 /**
  * @ClassName: WechatCouponDao
