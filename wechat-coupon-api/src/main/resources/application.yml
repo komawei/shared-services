@@ -1,7 +1,8 @@
 mybatis:
   config-location: classpath:mybatis-config.xml
   type-aliases-package: cn.eeka.sharedservices.wechat.entity
-  mapperLocations: classpath:/mappers/**/*.xml
+  mapper-locations:
+    - classpath:/mappers/**/*.xml
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
