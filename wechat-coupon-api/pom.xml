@@ -22,13 +22,11 @@
         <dependency>
             <groupId>cn.eeka</groupId>
             <artifactId>shared-services-common</artifactId>
-            <version>1.0</version>
         </dependency>
 
         <dependency>
             <groupId>cn.eeka</groupId>
             <artifactId>shared-service-security</artifactId>
-            <version>1.0</version>
         </dependency>
 
         <dependency>

@@ -10,7 +10,8 @@
     <modules>
         <module>shared-services-common</module>
         <module>wechat-coupon-api</module>
-        <module>shared-service-security</module>
+        <module>shared-services-eureka</module>
+        <module>shared-services-security</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -35,6 +36,18 @@
                 <version>Greenwich.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.eeka</groupId>
+                <artifactId>shared-services-common</artifactId>
+                <version>1.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.eeka</groupId>
+                <artifactId>shared-service-security</artifactId>
+                <version>1.0</version>
             </dependency>
 
             <dependency>
