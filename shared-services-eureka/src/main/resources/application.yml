@@ -1,1 +1,6 @@
-po
+server:
+  port: 8176
+
+eureka:
+  instance:
+    hostname: localhost
