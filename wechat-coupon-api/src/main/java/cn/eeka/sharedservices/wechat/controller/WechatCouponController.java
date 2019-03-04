@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Map;
 
@@ -28,5 +29,10 @@ public class WechatCouponController {
         Map<String, Object> params = Maps.newHashMap();
 
         return wechatCouponService.listWithCondition(params);
+    }
+
+    @RequestMapping(value = "/getSessionId")
+    public String getSessionId(HttpSession session) {
+        return session.getId();
     }
 }

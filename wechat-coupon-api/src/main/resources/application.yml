@@ -3,16 +3,16 @@ mybatis:
   type-aliases-package: cn.eeka.sharedservices.wechat.entity
   mapper-locations:
     - classpath:/mappers/**/*.xml
-security:
-  basic:
-    enabled: true
-  sessions: always
-  user:
-    name: micro
-    password: micro
-    role:
-      - USER
 spring:
+  security:
+    basic:
+      enabled: true
+    sessions: stateless
+    user:
+      name: micro
+      password: micromicro
+      role:
+        - USER
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
