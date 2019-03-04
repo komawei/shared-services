@@ -4,15 +4,6 @@ mybatis:
   mapper-locations:
     - classpath:/mappers/**/*.xml
 spring:
-  security:
-    basic:
-      enabled: true
-    sessions: stateless
-    user:
-      name: micro
-      password: micromicro
-      role:
-        - USER
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver

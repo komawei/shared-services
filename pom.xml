@@ -10,6 +10,7 @@
     <modules>
         <module>shared-services-common</module>
         <module>wechat-coupon-api</module>
+        <module>shared-service-security</module>
     </modules>
     <packaging>pom</packaging>
 
