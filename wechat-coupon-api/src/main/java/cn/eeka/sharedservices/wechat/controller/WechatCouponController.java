@@ -26,6 +26,7 @@ public class WechatCouponController {
     @RequestMapping(value = "/listAllCoupons", method = RequestMethod.GET)
     public List<WechatCoupon> listAll() {
         Map<String, Object> params = Maps.newHashMap();
+
         return wechatCouponService.listWithCondition(params);
     }
 }
