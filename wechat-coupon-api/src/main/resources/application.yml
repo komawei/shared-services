@@ -1,4 +1,3 @@
-s
 mybatis:
   config-location: classpath:mybatis-config.xml
   type-aliases-package: cn.eeka.sharedservices.wechat.entity
