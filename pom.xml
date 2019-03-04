@@ -46,7 +46,7 @@
 
             <dependency>
                 <groupId>cn.eeka</groupId>
-                <artifactId>shared-service-security</artifactId>
+                <artifactId>shared-services-security</artifactId>
                 <version>1.0</version>
             </dependency>
 
@@ -102,6 +102,11 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>18.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
             </dependency>
 
         </dependencies>

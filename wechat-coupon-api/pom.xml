@@ -8,7 +8,7 @@
         <version>1.0</version>
 	</parent>
 	<artifactId>wechat-coupon-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>war</packaging>
 	<name>wechat-coupon-api</name>
 	<description>API for Wechat Coupon</description>
@@ -26,7 +26,7 @@
 
         <dependency>
             <groupId>cn.eeka</groupId>
-            <artifactId>shared-service-security</artifactId>
+            <artifactId>shared-services-security</artifactId>
         </dependency>
 
         <dependency>
