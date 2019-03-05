@@ -1,3 +1,8 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 mybatis:
   config-location: classpath:mybatis-config.xml
   type-aliases-package: cn.eeka.sharedservices.wechat.entity
@@ -12,13 +17,21 @@ spring:
     url: jdbc:mysql://10.7.121.117:3306/wechat_coupon?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
     username: root
     password: eekao2o
-    filters: stat,wall,log4j     #druid监控配置
+    filters: stat,wall,log4j     # druid监控配置
     dbcp2:
-      min-idle: 5         #数据库连接池的最小维持连接数
-      initial-size: 5     #初始化提供的连接数
-      max-total: 5          #最大的连接数
-      max-wait-millis: 200        #等待连接获取的最大超时时间
+      min-idle: 5         # 数据库连接池的最小维持连接数
+      initial-size: 5     # 初始化提供的连接数
+      max-total: 5          # 最大的连接数
+      max-wait-millis: 200        # 等待连接获取的最大超时时间
   eureka:
     client:
       service-url:
         default-zone: http://localhost:8761/eureka
+    instance:
+      instance-id: wechat-coupon-api # 自定义实例名称
+      prefer-ip-address: true # 访问路径显示IP地址
+info:
+  app:
+    name: wechat-coupon-api
+  company:
+    name: eeka

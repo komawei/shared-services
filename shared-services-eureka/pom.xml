@@ -24,4 +24,18 @@
 
     </dependencies>
 
+    <build>
+        <finalName>shared-services-eureka</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.3.RELEASE</version>
+                <configuration>
+                    <mainClass>cn.eeka.sharedservices.SharedServicesEurekaApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
