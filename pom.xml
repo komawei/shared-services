@@ -12,6 +12,7 @@
         <module>wechat-coupon-api</module>
         <module>shared-services-eureka</module>
         <module>shared-services-security</module>
+        <module>wechat-coupon-consumer</module>
     </modules>
     <packaging>pom</packaging>
 
