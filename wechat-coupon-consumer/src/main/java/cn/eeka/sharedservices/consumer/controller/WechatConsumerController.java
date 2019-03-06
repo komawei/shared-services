@@ -18,7 +18,7 @@ public class WechatConsumerController {
     private WechatCouponClientService wechatCouponClientService;
 
     @RequestMapping(value = "/feignTest")
-    public String feignTest() {
-        return wechatCouponClientService.listAllCoupons();
+    public String feignTest(String type) {
+        return wechatCouponClientService.listAllCoupons(type);
     }
 }

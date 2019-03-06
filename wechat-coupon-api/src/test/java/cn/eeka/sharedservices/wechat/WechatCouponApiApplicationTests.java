@@ -18,12 +18,4 @@ import java.util.Map;
 @SpringBootTest
 public class WechatCouponApiApplicationTests {
 
-    @Autowired
-    private WechatCouponController wechatCouponController;
-
-	@Test
-	public void contextLoads() {
-        System.out.println(wechatCouponController.listAll());
-	}
-
 }
