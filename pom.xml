@@ -13,6 +13,7 @@
         <module>shared-services-eureka</module>
         <module>shared-services-security</module>
         <module>wechat-coupon-consumer</module>
+        <module>wechat-coupon-itf</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -52,6 +53,12 @@
             </dependency>
 
             <dependency>
+                <groupId>cn.eeka</groupId>
+                <artifactId>wechat-coupon-itf</artifactId>
+                <version>1.0</version>
+            </dependency>
+
+            <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>5.1.13</version>
@@ -61,6 +68,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
                 <version>1.1.10</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.56</version>
             </dependency>
 
             <dependency>

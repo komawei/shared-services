@@ -2,6 +2,8 @@ package cn.eeka.sharedservices.wechat.service;
 
 import cn.eeka.sharedservices.wechat.dao.WechatCouponDao;
 import cn.eeka.sharedservices.wechat.entity.WechatCoupon;
+import com.alibaba.druid.support.json.JSONUtils;
+import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +23,7 @@ public class WechatCouponService {
     @Autowired
     private WechatCouponDao wechatCouponDao;
 
-    public List<WechatCoupon> listWithCondition(Map<String, Object> params) {
-        return wechatCouponDao.listWithCondition(params);
+    public String listWithCondition(Map<String, Object> params) {
+        return JSON.toJSONString(wechatCouponDao.listWithCondition(params));
     }
 }

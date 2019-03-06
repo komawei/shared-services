@@ -1,6 +1,12 @@
 package cn.eeka.sharedservices.consumer.controller;
 
+import cn.eeka.sharedservices.service.WechatCouponClientService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @ClassName: WechatConsumerController
@@ -11,7 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WechatConsumerController {
 
-    public String listAll() {
-        return "1234";
+    @Autowired
+    private WechatCouponClientService wechatCouponClientService;
+
+    @RequestMapping(value = "/feignTest")
+    public String feignTest() {
+        return wechatCouponClientService.listAllCoupons();
     }
 }
