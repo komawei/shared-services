@@ -9,7 +9,7 @@
 	</parent>
 	<artifactId>wechat-coupon-api</artifactId>
 	<version>1.0</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>wechat-coupon-api</name>
 	<description>API for Wechat Coupon</description>
 
