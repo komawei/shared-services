@@ -2,6 +2,7 @@ package cn.eeka.sharedservices.service.fallback;
 
 import cn.eeka.sharedservices.service.WechatCouponClientService;
 import feign.hystrix.FallbackFactory;
+import org.springframework.stereotype.Component;
 
 /**
  * @ClassName: WechatCouponClientServiceFallbackFactory
@@ -9,6 +10,7 @@ import feign.hystrix.FallbackFactory;
  * @author: SimonWayne
  * @date: 2019/3/6 17:25
  */
+@Component
 public class WechatCouponClientServiceFallbackFactory implements FallbackFactory<WechatCouponClientService> {
 
     @Override

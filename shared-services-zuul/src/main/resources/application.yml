@@ -1,0 +1,11 @@
+server:
+  port: 9292
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    instance-id: shared-services-zuul
+spring:
+  application:
+    name: shared-services-zuul

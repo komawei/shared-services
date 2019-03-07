@@ -1,0 +1,12 @@
+server:
+  port: 9797
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    instance-id: wechat-coupon-api-without-security # 自定义实例名称
+    prefer-ip-address: true # 访问路径显示IP地址
+spring:
+  application:
+    name: shared-services-wechat-coupon-api-without-security

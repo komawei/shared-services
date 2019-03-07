@@ -1,4 +1,6 @@
 feign:
+  hystrix:
+    enabled: true
   compression:
     request:
       mime-types:
@@ -8,9 +10,8 @@ feign:
       min-request-size: 2048
 server:
   port: 80
-spring:
-  eureka:
-    client:
-      register-with-eureka: false
-      service-url:
-        default-zone: http://localhost:8761/eureka
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      default-zone: http://localhost:8761/eureka
