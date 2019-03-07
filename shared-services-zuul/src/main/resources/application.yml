@@ -9,3 +9,8 @@ eureka:
 spring:
   application:
     name: shared-services-zuul
+zuul:
+  routes:
+    shared-services-wechat-coupon-api-without-security:
+      path: /wechat-coupon/**
+      serviceId: shared-services-wechat-coupon-api-without-security
