@@ -17,6 +17,7 @@
         <module>wechat-coupon-consumer-hystrix-dashboard</module>
         <module>shared-services-zuul</module>
         <module>wechat-coupon-api-without-security</module>
+        <module>wechat-coupon-api-sleuth</module>
     </modules>
     <packaging>pom</packaging>
 

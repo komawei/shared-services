@@ -1,0 +1,5 @@
+server:
+  port: 9950
+spring:
+  application:
+    name: wechat-coupon-api-sleuth
