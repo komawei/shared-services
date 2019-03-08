@@ -15,6 +15,6 @@ public class FeignClientConfig {
 
     @Bean
     public BasicAuthRequestInterceptor getBasicAuthRequestInterceptor() {
-        return new BasicAuthRequestInterceptor("admin", "123456");
+        return new BasicAuthRequestInterceptor("zuuladmin", "654321");
     }
 }

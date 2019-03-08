@@ -10,7 +10,11 @@ spring:
   application:
     name: shared-services-zuul
 zuul:
+  ignored-services: "*"
   routes:
     shared-services-wechat-coupon-api-without-security:
-      path: /wechat-coupon/**
+      path: /wechat-coupon-without-security/**
       serviceId: shared-services-wechat-coupon-api-without-security
+    shared-services-wechat-coupon-api:
+      path: /wechat-coupon/**
+      serviceId: shared-services-wechat-coupon-api

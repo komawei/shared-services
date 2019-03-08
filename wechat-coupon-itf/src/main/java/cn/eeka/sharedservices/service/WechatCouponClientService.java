@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author: SimonWayne
  * @date: 2019/3/6 14:07
  */
-@FeignClient(configuration = FeignClientConfig.class, value = "SHARED-SERVICES-WECHAT-COUPON-API", fallbackFactory = WechatCouponClientServiceFallbackFactory.class)
+@FeignClient(configuration = FeignClientConfig.class, value = "SHARED-SERVICES-ZUUL", fallbackFactory = WechatCouponClientServiceFallbackFactory.class)
 public interface WechatCouponClientService {
 
     @RequestMapping(value = "/listAllCoupons", method = RequestMethod.GET)
