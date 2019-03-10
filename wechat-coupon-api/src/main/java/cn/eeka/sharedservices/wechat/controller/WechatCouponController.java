@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
 import java.util.Objects;
@@ -27,7 +28,10 @@ public class WechatCouponController {
 
     @HystrixCommand(fallbackMethod = "listAllFallback")
     @RequestMapping(value = "/listAllCoupons", method = RequestMethod.GET)
-    public String listAll(String type) throws Exception {
+    public String listAll(String type, HttpServletRequest request) throws Exception {
+        String header = request.getHeader("Authorization");
+        System.out.println("authHeader: " + header);
+
         if (Objects.equals(type, "hystrix")) {
             throw new Exception("error");
         }
@@ -36,7 +40,7 @@ public class WechatCouponController {
         return wechatCouponService.listWithCondition(params);
     }
 
-    public String listAllFallback(String type) throws Exception {
+    public String listAllFallback(String type, HttpServletRequest request) throws Exception {
         return "hystrix-activated";
     }
 

@@ -7,10 +7,17 @@ eureka:
   instance:
     instance-id: shared-services-zuul
 spring:
+  security:
+    user:
+      name: zuuladmin
+      password: 654321
+      role:
+        - USER
   application:
     name: shared-services-zuul
 zuul:
-  ignored-services: "*"
+  ignored-services:
+    "*"
   routes:
     shared-services-wechat-coupon-api-without-security:
       path: /wechat-coupon-without-security/**
