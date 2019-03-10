@@ -7,12 +7,6 @@ eureka:
   instance:
     instance-id: shared-services-zuul
 spring:
-  security:
-    user:
-      name: zuuladmin
-      password: 654321
-      role:
-        - USER
   application:
     name: shared-services-zuul
 zuul:
