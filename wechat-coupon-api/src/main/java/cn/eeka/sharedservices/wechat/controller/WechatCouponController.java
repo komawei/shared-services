@@ -28,10 +28,7 @@ public class WechatCouponController {
 
     @HystrixCommand(fallbackMethod = "listAllFallback")
     @RequestMapping(value = "/listAllCoupons", method = RequestMethod.GET)
-    public String listAll(String type, HttpServletRequest request) throws Exception {
-        String header = request.getHeader("Authorization");
-        System.out.println("authHeader: " + header);
-
+    public String listAll(String type) throws Exception {
         if (Objects.equals(type, "hystrix")) {
             throw new Exception("error");
         }
@@ -40,8 +37,8 @@ public class WechatCouponController {
         return wechatCouponService.listWithCondition(params);
     }
 
-    public String listAllFallback(String type, HttpServletRequest request) throws Exception {
-        return "hystrix-activated";
+    public String listAllFallback(String type) throws Exception {
+        return "hystrix-activated" + type;
     }
 
     @RequestMapping(value = "/getSessionId")

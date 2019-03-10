@@ -40,8 +40,8 @@ public class AuthorizationZuulFilter extends ZuulFilter {
         logger.info("Zuul filter runs");
         RequestContext ctx = RequestContext.getCurrentContext();
         String auth = "admin:123456";
-        byte[] encodedAuth = Base64Utils.encode(auth.getBytes());
-        String authHeader = "Basic " + new String(encodedAuth);
+        String encodedAuth = Base64Utils.encodeToString(auth.getBytes());
+        String authHeader = "Basic " + encodedAuth;
         logger.info("authHeader->" + authHeader);
         ctx.addZuulRequestHeader("Authorization", authHeader);
 

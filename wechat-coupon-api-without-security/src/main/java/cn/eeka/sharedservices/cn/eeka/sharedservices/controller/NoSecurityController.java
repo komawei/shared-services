@@ -3,6 +3,8 @@ package cn.eeka.sharedservices.cn.eeka.sharedservices.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @ClassName: NoSecurityController
  * @Description: TODO

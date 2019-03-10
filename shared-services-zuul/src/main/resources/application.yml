@@ -10,6 +10,7 @@ spring:
   application:
     name: shared-services-zuul
 zuul:
+  sensitive-headers:
   ignored-services:
     "*"
   routes:

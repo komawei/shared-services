@@ -19,7 +19,7 @@ public class WechatCouponClientServiceFallbackFactory implements FallbackFactory
 
             @Override
             public String listAllCoupons(String type) {
-                return "fallback";
+                return "feign fallback";
             }
         };
     }
